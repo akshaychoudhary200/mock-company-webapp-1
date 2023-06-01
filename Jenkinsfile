@@ -1,8 +1,4 @@
-pipeline {
-  /*
-   * TODO: Implement pipeline stages/steps
-   *   See documentation: https://www.jenkins.io/doc/book/pipeline/syntax/#stages
-   */
+
    node {
      stage("Clone the project") {
        git branch: 'main', url: 'https://github.com/akshaychoudhary200/mock-company-webapp.git'
@@ -19,4 +15,4 @@ pipeline {
        }
      }
    }
-}
+
